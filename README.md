@@ -7,5 +7,7 @@
 </head>
 
 <body>
-	test
+	<script>
+		document.write "hi"
+	</script>
 </body>
