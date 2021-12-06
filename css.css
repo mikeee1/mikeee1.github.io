@@ -4,6 +4,10 @@
     line-height: 1.5;
 }
 
+body {
+  background-color: rgb(194, 253, 255);
+}
+
 .menu_bar {
    background-color: black;
    width: 70px;
@@ -46,7 +50,7 @@
 }
 
 .eind_tekst {
-  font-size: 20px;
+  font-size: 24px;
 }
 
 * {
