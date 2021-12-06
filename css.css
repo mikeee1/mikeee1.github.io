@@ -29,6 +29,22 @@
     font-size: 50px;
 }
 
+.informatie_northgo_travels {
+  text-align: center;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.centre {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.northgo_travels_name_centre {
+  margin-left: -17%;
+}
+
 * {
     box-sizing: border-box;
 }
