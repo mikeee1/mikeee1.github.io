@@ -2,3 +2,8 @@
 body {
     background-color: rgb(194, 253, 255);
 }
+
+div.static {
+    position: relative;
+    border: 3px solid #73AD21;
+}
