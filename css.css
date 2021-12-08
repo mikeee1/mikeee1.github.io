@@ -59,6 +59,12 @@
   }
 }
 
+@media screen and (max-width: 600px) {
+  .index_text {
+    font-size: 36px;
+  }
+}
+
 .index_text {
  font-size: 24px;
 }
