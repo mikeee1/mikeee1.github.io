@@ -6,8 +6,8 @@
     <title>Unity WebGL Player | snake 2D</title>
   </head>
   <body style="text-align: center">
-    <canvas id="unity-canvas" width=960 height=600 style="width: 960px; height: 600px; background: #231F20"></canvas>
-    <script src="Build/0.0.1.loader.js"></script>
+    <canvas id="unity-canvas" width=1920 height=1080 style="width: 960px; height: 600px; background: #231F20"></canvas>
+    <script src="Build/0.0.2.loader.js"></script>
     <script>
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
         // Mobile device style: fill the whole browser client area with the game canvas:
@@ -18,13 +18,13 @@
       }
 
       createUnityInstance(document.querySelector("#unity-canvas"), {
-        dataUrl: "Build/0.0.1.data",
-        frameworkUrl: "Build/0.0.1.framework.js",
-        codeUrl: "Build/0.0.1.wasm",
+        dataUrl: "Build/0.0.2.data",
+        frameworkUrl: "Build/0.0.2.framework.js",
+        codeUrl: "Build/0.0.2.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "Mikeee",
         productName: "snake 2D",
-        productVersion: "0.0.1",
+        productVersion: "0.0.2",
         // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
         // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
       });
