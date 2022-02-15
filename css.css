@@ -29,6 +29,21 @@
    text-align: center;
 }
 
+  /* Light mode */
+  @media (prefers-color-scheme: light) {
+    body {
+        background-color: white;
+        color: black;
+    }}
+  
+  /* Dark mode */
+  @media (prefers-color-scheme: dark) {
+    body {
+        background-color: black;
+        color: white;
+    }
+  }
+
 .dummy_text {
     font-size: 60px;
 }
@@ -163,18 +178,15 @@
     background-color: rgba(3, 78, 170, 0.60);
   }
 
-  /* Light mode */
-@media (prefers-color-scheme: light) {
-  body {
-      background-color: white;
-      color: black;
-  }}
-
-/* Dark mode */
-@media (prefers-color-scheme: dark) {
-  body {
-      background-color: black;
-      color: white;
+  .introtekst2 {
+    text-align: center;
   }
-}
-
+  
+  .hello-img {
+    background-color: black;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:20%
+  }
+  
