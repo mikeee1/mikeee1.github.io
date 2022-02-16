@@ -31,16 +31,27 @@
 
   /* Light mode */
   @media (prefers-color-scheme: light) {
-    body {
-        background-color: white;
-        color: black;
-    }}
+    .div3 {
+        background-color: black;
+        border-radius:25px;
+    }
+    .introtekst{
+      border-top-left-radius: 25px;
+      border-top-right-radius: 25px;
+    }
+    .introtekst2{
+    color: white;
+    }
+    }
   
   /* Dark mode */
   @media (prefers-color-scheme: dark) {
     body {
         background-color: black;
         color: white;
+    }
+    .introtekst {
+      border-radius: 25px;
     }
   }
 
@@ -53,7 +64,6 @@
   margin-left: auto;
   margin-right: auto;
   width: 50%;
-  align:center;
 }
 
 .table_name {
@@ -189,4 +199,3 @@
     margin-right: auto;
     width:20%
   }
-  
