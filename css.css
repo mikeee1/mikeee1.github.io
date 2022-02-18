@@ -123,16 +123,9 @@
     /*.flex-container {
     display: grid;
     grid-column-start: 1;
-<<<<<<< HEAD
     grid-template-columns: auto;
     }
     .flex-container > div {
-=======
-  }
-}
-
-  .flex-container > div {
->>>>>>> e4909ef4e688b423c933819eba70831c4e89cb85
     grid-area: auto;
     align-self: center;
     justify-self: center;
