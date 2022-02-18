@@ -115,6 +115,15 @@
     .index_text {
       font-size: 36px;
     }
+    .flex-container {
+    display: grid;
+    grid-column-start: 1;
+  }
+
+  .flex-container > div {
+    grid-area: auto;
+    align-self: center;
+    justify-self: center;
   }
 
 .dummy_text {
@@ -224,7 +233,6 @@
   .flex-container {
     display: flex;
     background-color: black;
-    align-items: center;
     justify-content: center;
     color: white;
   }
