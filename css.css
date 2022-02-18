@@ -242,18 +242,36 @@
 
   .Profile-Picture {
     width: 40%;
-    border-radius: 20px;
+    border-radius: 10px;
     border: 3px solid black;
-    align-items: center;
   }
 
   .Profile-Text-titel {
-    vertical-align: 30px;
+    vertical-align: 60px;
+    Padding: 10px;
     text-decoration: underline;
   }
 
   .Profile-Text {
     vertical-align: 20px;
-    font-size: medium;
-    margin: 16px;
+    padding: 10px;
   }
+
+  .imgwrap {
+    width: 50%; /*or whatever you choose*/
+   margin: auto;
+  }
+
+  .imgwrap img {
+    display: block;
+    width: 100%;
+    max-width: 500px; /*actual image width*/
+    height: auto; /* maintain aspect ratio*/
+    margin: auto; /*optional centering of image*/
+  }
+
+  .Textbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: medium;
