@@ -60,7 +60,7 @@
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
-}}
+}
 
 .menu_link {
   color: white;
@@ -276,3 +276,4 @@
     align-items: center;
     justify-content: center;
     font-size: medium;
+  }
