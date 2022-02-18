@@ -119,6 +119,7 @@
     display: grid;
     grid-column-start: 1;
   }
+}
 
   .flex-container > div {
     grid-area: auto;
