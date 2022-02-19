@@ -137,6 +137,7 @@
     }*/
 
 
+/*LTR & RTL CSS Settings */
 .dummy_text {
     font-size: 60px;
 }
@@ -182,8 +183,9 @@
   text-align: left;
 }
 
-.turkije {
+.turkije, .greek {
   text-align: right;
+  width: 500px
 }
 
 .text_left {
