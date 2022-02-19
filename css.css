@@ -1,8 +1,3 @@
-/*table,th, td, tr {
-  border: 1px solid black;
-  border-collapse: collapse;
-}*/
-
 /* index.html regel 14 t/m 44 
 komt nu overeen met
 CSS.css regel 9 t/m regel 90 */
@@ -11,7 +6,7 @@ CSS.css regel 9 t/m regel 90 */
   margin-right:-5px;
 }
 
-    /* Clearfix (clear floats) */
+/* Clearfix (clear floats) */
 .row::after {
   content: "";
   clear: both;
@@ -84,8 +79,6 @@ CSS.css regel 9 t/m regel 90 */
 
 .logo {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
   width:170px;
 }
 
@@ -168,9 +161,6 @@ CSS.css regel 9 t/m regel 90 */
 
 
 /*LTR & RTL CSS Settings */
-.dummy_text {
-    font-size: 60px;
-}
 
 .table_name {
     margin-left: auto;
