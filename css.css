@@ -3,6 +3,40 @@
   border-collapse: collapse;
 }*/
 
+/* index.html regel 14 t/m 44 
+komt nu overeen met
+CSS.css regel 9 t/m regel 90 */
+.row {
+  margin-left:-5px;
+  margin-right:-5px;
+}
+
+    /* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+
+.menu_link {
+  color: white;
+  text-align: left;
+  line-height: 1.5;
+}
+
+.menu_bar {
+ background-color: black;
+ width: 10px;
+ text-align: center;
+ border-radius: 25px;
+}
+
 /* The side navigation menu */
 .sidenav {
   height: 100%; /* 100% Full-height */
@@ -16,14 +50,6 @@
   padding-top: 40px; /* Place content 40px from the top */
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
 }
-
-    /* Clearfix (clear floats) */
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
 
 /* The navigation menu links */
 .sidenav a {
@@ -56,38 +82,37 @@
   color: white;
 }
 
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
-
-.menu_link {
-  color: white;
-  text-align: left;
-  line-height: 1.5;
-}
-
-.menu_bar {
- background-color: black;
- width: 10px;
- text-align: center;
- border-radius: 25px;
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width:170px;
 }
 
 /*media control menu
- - Light mode */
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+    }
+
+  /* Light mode */
   @media (prefers-color-scheme: light) {
     .div3 {
-        background-color: black;
-        border-radius:25px;
+      background-color: black;
+      border-radius:25px;
     }
     .introtekst{
       border-top-left-radius: 25px;
       border-top-right-radius: 25px;
+      text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+      background-color: rgba(3, 78, 170, 0.60);
+      text-align: center;
+      color: whitesmoke;
     }
     .introtekst2{
-    color: white;
+      color: white;
+      text-align: center;
     }
     .flex-container {
       border-bottom-left-radius: 25px;
@@ -97,15 +122,19 @@
   /* Dark mode */
   @media (prefers-color-scheme: dark) {
     body {
-        background-color: black;
-        /*color: white; als het nodig is zet je dit aan */
+      background-color: black;
+      /*color: white; als het nodig is zet je dit aan */
     }
     .introtekst {
       border-radius: 25px;
-      color: white;
+      color: whitesmoke;
+      text-align: center;
+      background-color: rgba(3, 78, 170, 0.60);
+      text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
     }
     .introtekst2 {
       color: white;
+      text-align: center;
     }
     .contact {
       border-radius: 25px;
@@ -120,7 +149,8 @@
       font-size: 36px;
     }
   }
-    /*.flex-container {
+    
+  /*.flex-container {
     display: grid;
     grid-column-start: 1;
     grid-template-columns: auto;
@@ -140,13 +170,6 @@
 /*LTR & RTL CSS Settings */
 .dummy_text {
     font-size: 60px;
-}
-
-.logo {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
 }
 
 .table_name {
@@ -183,11 +206,6 @@
   text-align: left;
 }
 
-.turkije, .greek {
-  text-align: right;
-  width: 500px
-}
-
 .text_left {
   width: 50%;
 }
@@ -195,39 +213,8 @@
 
 .index_text {
  font-size: 24px;
+ box-sizing: border-box;
 }
-
-.index_text {
-    box-sizing: border-box;
-}
-
-.logo{
-  width:170px;
-}
-
-.row {
-    margin-left:-5px;
-    margin-right:-5px;
-  }
-    
-.column {
-    float: left;
-    width: 50%;
-    padding: 5px;
-}
-  
-
-
-  .introtekst {
-    text-align: center;
-    color: whitesmoke;
-    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
-    background-color: rgba(3, 78, 170, 0.60);
-  }
-
-  .introtekst2 {
-    text-align: center;
-  }
   
   .hello-img {
     background-color: black;
