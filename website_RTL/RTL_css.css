@@ -1,4 +1,4 @@
-
+/* RTL SETTINGS ONLY */
 /* nav menu total settings for RTL only */
 /*sidenav */
 .row_RTL {
@@ -19,23 +19,12 @@
   padding: 5px;
 }
 
-.menu_link_RTL {
-  color: white;
-  text-align: center;
-  line-height: 1.5;
-}
-
-.table_menu_RTL {
-  margin-right: end;
-  margin-left: start;
-}
-
 .menu_bar_RTL {
- background-color: black;
- width: 10px;
- text-align: center;
- border-radius: 25px;
-}
+  background-color: black;
+  width: 10px;
+  text-align: center;
+  border-radius: 25px;
+ }
 
 /* The side navigation menu */
 .sidenav_RTL {
@@ -51,7 +40,7 @@
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
   }
 
-  /* The navigation menu links */
+/* The navigation menu links */
 .sidenav_RTL a {
   padding: 8px 8px 8px 16px;
   text-decoration: none;
@@ -66,7 +55,7 @@
   color: #f1f1f1;
 }
 
-  /* Position and style the close button (top right corner) */
+/* Position and style the close button (top right corner) */
 .sidenav_RTL .closebtn {
   position: absolute;
   top: 0;
@@ -91,28 +80,68 @@ to the right when you open the side navigation */
 
 /* media settings */
 @media screen and (max-width: 600px) {
-/*.text_left_table_right {
-  width: 100%;
-  margin-right: 0px;
-  margin-left: auto;
-    }*/
   }
 
-/*div.static {
-  position: static;
-  border: 3px solid #73AD21;
-}*/
+/* Light mode */
+@media (prefers-color-scheme: light) {
+  .introtekst{
+    border-radius: 25px;
+    /*over-rules css.css */
+  }
+  h2.Text1-RTL-left {
+    color:black;
+  }
+  h3.Text2-RTL-left {
+    color:black;
+  }
+  .introtekst2{
+    color: white;
+    padding-bottom: 20px;
+    /*over-rules css.css */
+  }
+}
 
-/*.text_left_table_right {
-  width: 100%;
-  margin-right: start;
-  margin-left: end;
-  }*/
+@media (prefers-color-scheme: dark) {
+  h2.Text1-LTR-left {
+    color:white;
+  }
+  h3.Text2-LTR-left {
+    color:white;
+  }
+}
 
-.informatie_northgo_travels_RTL {
+h2.Text1-RTL-left {
   text-align: start;
-  width: 100%;
-  margin-left: start;
-  color: white;
-  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
-  }
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: -20px;
+  border-top: 3px dotted lightskyblue;
+  border-left: 3px dotted lightskyblue;
+  border-right: 3px dotted lightskyblue;
+}
+
+h3.Text2-RTL-left {
+  text-align: start;
+  margin-left: 20px;
+  width: 600px;
+  margin-right: 20px;
+  border-left: 3px dotted lightskyblue;
+  border-right: 3px dotted lightskyblue;
+  border-bottom: 3px dotted lightskyblue;
+}
+
+.turkije {
+  float: end;
+  max-width: 100%;
+  margin-top: 20px;
+  border: 3px solid red;
+  border-radius: 25px;
+}
+
+.greek{
+  float: end;
+  max-width: 100%;
+  margin-bottom: 140px;
+  border: 3px solid red;
+  border-radius: 25px;
+}
