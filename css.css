@@ -1,6 +1,6 @@
 /* index.html regel 14 t/m 44 
 komt nu overeen met
-CSS.css regel 9 t/m regel 90 */
+CSS.css regel 4 t/m regel 83 */
 .row {
   margin-left:-5px;
   margin-right:-5px;
@@ -14,14 +14,14 @@ CSS.css regel 9 t/m regel 90 */
 }
 
 .column {
-  float: left;
+  float: start;
   width: 50%;
   padding: 5px;
 }
 
 .menu_link {
   color: white;
-  text-align: left;
+  text-align: center;
   line-height: 1.5;
 }
 
@@ -70,7 +70,9 @@ CSS.css regel 9 t/m regel 90 */
   margin-left: 50px;
 }
 
-/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+/* Style page content;
+use this if you want to push the page content
+to the right when you open the side navigation */
 #main {
   transition: margin-left .5s;
   padding: 20px;
@@ -88,6 +90,15 @@ CSS.css regel 9 t/m regel 90 */
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
     }
+
+  @media screen and (max-width: 600px) {
+    .text_left {
+      width: 100%;
+    }
+    .index_text {
+      font-size: 36px;
+    }
+  }
 
   /* Light mode */
   @media (prefers-color-scheme: light) {
@@ -134,14 +145,7 @@ CSS.css regel 9 t/m regel 90 */
     }
   }
 
-  @media screen and (max-width: 600px) {
-    .text_left {
-      width: 100%;
-    }
-    .index_text {
-      font-size: 36px;
-    }
-  }
+
     
   /*.flex-container {
     display: grid;
@@ -160,18 +164,15 @@ CSS.css regel 9 t/m regel 90 */
     }*/
 
 
-/*LTR & RTL CSS Settings */
+/*RTL CSS Settings */
 
 .table_name {
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: start;
+    margin-right: start;
     margin-top: -5%;
 }
 
-.name {
-    text-align: center;
-    font-size: 50px;
-}
+
 
 .informatie_northgo_travels {
   text-align: left;
@@ -187,13 +188,9 @@ CSS.css regel 9 t/m regel 90 */
   margin-right: auto;
 }
 
-.northgo_travels_name_centre {
-  margin-left: -17%;
-}
-
 .eind_tekst {
   font-size: 24px;
-  text-align: left;
+  text-align: start;
 }
 
 .text_left {
