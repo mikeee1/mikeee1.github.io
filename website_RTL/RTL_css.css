@@ -102,10 +102,10 @@ to the right when you open the side navigation */
 }
 
 @media (prefers-color-scheme: dark) {
-  h2.Text1-LTR-left {
+  h2.Text1-RTL-left {
     color:white;
   }
-  h3.Text2-LTR-left {
+  h3.Text2-RTL-left {
     color:white;
   }
 }
