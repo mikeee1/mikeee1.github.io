@@ -126,7 +126,10 @@ to the right when you open the side navigation */
   /* Dark mode */
   @media (prefers-color-scheme: dark) {
     body {
+      background-image: url(fotos/93ca3396e280b4afc08ff8fc7bd03df72c6e808c.jfif);
       background-color: black;
+      background-repeat: no-repeat;
+      background-size: 100%;
       /*color: white; als het nodig is zet je dit aan */
     }
     .introtekst {
