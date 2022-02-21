@@ -51,15 +51,18 @@ h3.Text2-LTR-left {
     /*over-rules css.css */
   }
   h2.Text1-LTR-left {
-    color:black;
+    color: black;
   }
   h3.Text2-LTR-left {
-    color:black;
+    color: black;
   }
-  .introtekst2{
+  .introtekst2 {
     color: white;
     padding-bottom: 20px;
     /*over-rules css.css */
+    @media screen and (max-height: 1550px) {
+    padding-bottom: 30px}
+    /*media wijdte scherm aanpassen */
   }
 }
 
@@ -67,7 +70,6 @@ h3.Text2-LTR-left {
   .introtekst {
     color: white;
   }
-  
   h2.Text1-LTR-left {
     color:white;
   }

@@ -26,12 +26,6 @@ CSS.css regel 4 t/m regel 83 */
   padding: 5px;
 }
 
-/*.menu_link {
-  color: white;
-  text-align: center;
-  line-height: 1.5;
-}*/
-
 /* The side navigation menu */
 .sidenav {
   height: 100%; /* 100% Full-height */
@@ -114,7 +108,7 @@ to the right when you open the side navigation */
   /* Light mode */
   @media (prefers-color-scheme: light) {
     body {
-      background-color: black;
+      background-color: white;
       /*color: white; als het nodig is zet je dit aan */
     }
     .div3 {
