@@ -1,38 +1,14 @@
 /* RTL SETTINGS ONLY */
-
-/* media settings */
-@media screen and (max-width: 600px) {
-  }
-
-/* Light mode */
-@media (prefers-color-scheme: light) {
-  .introtekst{
-    border-radius: 25px;
-    /*over-rules css.css */
-  }
-  h2.Text1-RTL-left {
-    color:black;
-  }
-  h3.Text2-RTL-left {
-    color:black;
-  }
-  .introtekst2{
-    color: white;
-    padding-bottom: 20px;
-    /*over-rules css.css */
-  }
+/* The side navigation menu */
+.sidenav {
+  right: 0;
 }
 
-@media (prefers-color-scheme: dark) {
-  h2.Text1-RTL-left {
-    color:white;
-  }
-  h3.Text2-RTL-left {
-    color:white;
-  }
+#main {
+  transition: margin-start .5s;
 }
 
-h2.Text1-RTL-left {
+h2.Text1-RTL-right {
   text-align: start;
   margin-left: 20px;
   margin-right: 20px;
@@ -42,7 +18,7 @@ h2.Text1-RTL-left {
   border-right: 3px dotted lightskyblue;
 }
 
-h3.Text2-RTL-left {
+h3.Text2-RTL-right {
   text-align: start;
   margin-left: 20px;
   width: 600px;
@@ -66,4 +42,40 @@ h3.Text2-RTL-left {
   margin-bottom: 140px;
   border: 3px solid red;
   border-radius: 25px;
+}
+
+/* media settings */
+@media screen and (max-width: 600px) {
+}
+
+/* Light mode */
+@media (prefers-color-scheme: light) {
+.introtekst{
+  border-radius: 25px;
+  /*over-rules css.css */
+}
+
+.introtekst2{
+  color: white;
+  padding-bottom: 20px;
+  /*over-rules css.css */
+}
+
+h2.Text1-RTL-right {
+  color:black;
+}
+
+h3.Text2-RTL-right {
+  color:black;
+}
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+h2.Text1-RTL-right {
+  color:white;
+}
+h3.Text2-RTL-right {
+  color:white;
+}
 }

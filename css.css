@@ -1,6 +1,7 @@
 /* index.html regel 14 t/m 44 
 komt nu overeen met
-CSS.css regel 4 t/m regel 83 */
+CSS.css regel 5 t/m regel 79 */
+/* The side nav. menu */
 .row {
   margin-left:-5px;
   margin-right:-5px;
@@ -13,6 +14,12 @@ CSS.css regel 4 t/m regel 83 */
   display: table;
 }
 
+.column {
+  float: start;
+  width: 50%;
+  padding: 5px;
+}
+
 .menu_bar {
   background-color: black;
   width: 10px;
@@ -20,13 +27,6 @@ CSS.css regel 4 t/m regel 83 */
   border-radius: 25px;
  }
 
-.column {
-  float: start;
-  width: 50%;
-  padding: 5px;
-}
-
-/* The side navigation menu */
 .sidenav {
   height: 100%; /* 100% Full-height */
   width: 0; /* 0 width - change this with JavaScript */
@@ -78,15 +78,6 @@ to the right when you open the side navigation */
   width:170px;
 }
 
-.hello-img {
-  background-color: black;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding-bottom: 30px;
-  width:20%
-}
-
 /* ----------------------------------------------------------------------------------------*/
 
 /*media control menu
@@ -111,9 +102,9 @@ to the right when you open the side navigation */
       background-color: white;
       /*color: white; als het nodig is zet je dit aan */
     }
+    
     .div3 {
       background-color: black;
-
       border-radius:25px; 
     }
 
@@ -125,14 +116,17 @@ to the right when you open the side navigation */
       text-align: center;
       color: whitesmoke;
     }
+
     .introtekst2{
       color: white;
       text-align: center;
     }
+
     .flex-container {
       border-bottom-left-radius: 25px;
       border-bottom-right-radius: 25px;
-    }}
+    }
+  }
   
   /* Dark mode */
   @media (prefers-color-scheme: dark) {
@@ -140,6 +134,7 @@ to the right when you open the side navigation */
       background-color: black;
       /*color: white; als het nodig is zet je dit aan */
     }
+
     .introtekst {
       border-radius: 25px;
       color: whitesmoke;
@@ -147,91 +142,21 @@ to the right when you open the side navigation */
       background-color: rgba(3, 78, 170, 0.60);
       text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
     }
+
     .introtekst2 {
       color: white;
       text-align: center;
     }
-    .contact {
-      border-radius: 25px;
-    }
   }
 
-  /*.flex-container {
-    display: grid;
-    grid-column-start: 1;
-    grid-template-columns: auto;
-    }
-    .flex-container > div {
-    grid-area: auto;
-    align-self: center;
-    justify-self: center;
-    grid-template-columns: auto;
+  /* --------------------------------------------------------------------------------*/
+  /* Hello img, is enkel op index.html */
+  .hello-img {
+    background-color: black;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 30px;
+    width:20%
   }
-    .imgwrap {
-      margin: auto;
-    }
-    }*/
 
-
-/*RTL CSS Settings */
-
-.table_name {
-    margin-left: start;
-    margin-right: start;
-    margin-top: -5%;
-}
-
-.index_text {
- font-size: 24px;
- box-sizing: border-box;
-}
-
-/*
-Contact-pagina html content
-*/
-
-.contact {
-  text-align: center;
-  color: whitesmoke;
-  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
-  background-color: rgba(3, 78, 170, 0.60);
-  border-top-left-radius: 25px;
-  border-top-right-radius: 25px;
-}
-
-.flex-container {
-  display: flex;
-  justify-content: center;
-}
-
-.flex-container > div {
-  background-color: #f1f1f1;
-  margin: 20px;
-  padding: 20px;
-  width: 17%;
-  border-radius: 25px;
-  border: 4px solid rgba(3, 78, 170, 0.60);
- }
-
-.imgwrap {
-  display: block;
-  align-items: center;
-  width: 100%;
-  border-radius: 10px;
-  border: 3px solid black;
-}
-
-.Textbox {
-  display: flex;
-  justify-content: center;
-}
-
-.Profile-Text-Naam {
-  Padding: 10px;
-  text-decoration: underline;
-}
-
-.Profile-Text {
-  padding: 5px;
-  font-size: 15px;  
-}

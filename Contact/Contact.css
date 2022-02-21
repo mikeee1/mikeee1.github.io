@@ -1,0 +1,56 @@
+.flex-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+.flex-container > div {
+    background-color: #f1f1f1;
+    margin: 20px;
+    padding: 20px;
+    width: 17%;
+    border-radius: 25px;
+    border: 4px solid rgba(3, 78, 170, 0.60);
+   }
+  
+.imgwrap {
+    display: block;
+    align-items: center;
+    width: 100%;
+    border-radius: 10px;
+    border: 3px solid black;
+  }
+  
+.Textbox {
+    display: flex;
+    justify-content: center;
+  }
+  
+.Profile-Text-Naam {
+    Padding: 10px;
+    text-decoration: underline;
+  }
+  
+.Profile-Text {
+    padding: 5px;
+    font-size: 15px;  
+  }
+
+/* nog aanpassen voor responsive design */
+/*
+  @media ...
+  .flex-container {
+    display: grid;
+    grid-column-start: 1;
+    grid-template-columns: auto;
+    }
+  
+  .flex-container > div {
+    grid-area: auto;
+    align-self: center;
+    justify-self: center;
+    grid-template-columns: auto;
+  }
+
+  .imgwrap {
+    margin: auto;
+  }
