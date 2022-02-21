@@ -7,6 +7,10 @@ CSS.css regel 5 t/m regel 79 */
   margin-right:-5px;
 }
 
+.row_BitcSnake {
+  margin-left: 5px;
+}
+
 /* Clearfix (clear floats) */
 .row::after {
   content: "";
