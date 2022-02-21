@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<head>
     <title>snake 2D</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <link rel="shortcut icon" href="../fotos/logo V2.png">
     <link rel="stylesheet" href="TemplateData/style.css">
-  </head>
-  <body>
+    <link rel="stylesheet" href="../css.css">
+    <script src="../sidebar.js"></script>
+</head>
+<body>
     <div id="unity-container" class="unity-desktop">
       <canvas id="unity-canvas" width=960 height=600></canvas>
       <div id="unity-loading-bar">
@@ -117,5 +120,39 @@
       };
       document.body.appendChild(script);
     </script>
-  </body>
+  <inhoud>
+    <div class="row">
+      <div class="column">
+          <table>
+              <tr>
+                  <!--nav. menu-->
+                  <th class="menu_bar">
+                      <div id="mySidenav" class="sidenav">
+                          <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+                          <a href="../index.html">Hoofdpagina</a>
+                          <a href="/website_LTR/landing_page.html">Left to right pagina</a>
+                          <a href="/website_RTL/landing_page.html">Right to left pagina</a>
+                          <a href="/website_geen_css/landing_page.html">Geen CSS</a>
+                          <a href="/website_wel_css/landing_page.html">Wel CSS</a>
+                          <a href="/snake_2d/index.html">SNAKE</a>
+                          <a href="/bitcoin/index.html">Bitcoin Miner</a>
+                          <a href="/stick/index.html">Stick Adventure</a>
+                          <a href="/Contact/Contact.html">Contact</a>
+                      </div>
+                      <div id="main">
+                          <span style="font-size:20px; cursor:pointer;" onclick="openNav()">&#9776;</span>
+                      </div>
+                  </th>
+                  <!-- Logo-->
+                  <th>
+                      <div>
+                          <img class="logo" alt="Logo" src="/fotos/logo2.png">
+                      </div>
+                  </th>
+              </tr>
+          </table>
+      </div>
+    </div>
+  </inhoud>
+</body>
 </html>
