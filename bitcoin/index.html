@@ -11,6 +11,40 @@
     <script src="../sidebar.js"></script>
   </head>
   <body>
+    <inhoud>
+      <div class="row_BitcSnakeStick">
+        <div class="column">
+            <table>
+                <tr>
+                    <!--nav. menu-->
+                    <th class="menu_bar">
+                        <div id="mySidenav" class="sidenav">
+                            <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+                            <a href="../index.html">Hoofdpagina</a>
+                            <a href="/website_LTR/landing_page.html">Left to right pagina</a>
+                            <a href="/website_RTL/landing_page.html">Right to left pagina</a>
+                            <a href="/website_geen_css/landing_page.html">Geen CSS</a>
+                            <a href="/website_wel_css/landing_page.html">Wel CSS</a>
+                            <a href="/snake_2d/index.html">SNAKE</a>
+                            <a href="/bitcoin/index.html">Bitcoin Miner</a>
+                            <a href="/stick/index.html">Stick Adventure</a>
+                            <a href="/Contact/Contact.html">Contact</a>
+                        </div>
+                        <div id="main">
+                            <span style="font-size:20px; cursor:pointer;" onclick="openNav()">&#9776;</span>
+                        </div>
+                    </th>
+                    <!-- Logo-->
+                    <th>
+                        <div>
+                            <img class="logo" alt="Logo" src="/fotos/logo2.png">
+                        </div>
+                    </th>
+                </tr>
+            </table>
+        </div>
+      </div>
+    </inhoud>
     <div id="unity-container" class="unity-desktop">
       <canvas id="unity-canvas" width=960 height=600></canvas>
       <div id="unity-loading-bar">
@@ -119,39 +153,5 @@
       };
       document.body.appendChild(script);
     </script>
-    <inhoud>
-      <div class="row_BitcSnakeStick">
-        <div class="column">
-            <table>
-                <tr>
-                    <!--nav. menu-->
-                    <th class="menu_bar">
-                        <div id="mySidenav" class="sidenav">
-                            <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
-                            <a href="../index.html">Hoofdpagina</a>
-                            <a href="/website_LTR/landing_page.html">Left to right pagina</a>
-                            <a href="/website_RTL/landing_page.html">Right to left pagina</a>
-                            <a href="/website_geen_css/landing_page.html">Geen CSS</a>
-                            <a href="/website_wel_css/landing_page.html">Wel CSS</a>
-                            <a href="/snake_2d/index.html">SNAKE</a>
-                            <a href="/bitcoin/index.html">Bitcoin Miner</a>
-                            <a href="/stick/index.html">Stick Adventure</a>
-                            <a href="/Contact/Contact.html">Contact</a>
-                        </div>
-                        <div id="main">
-                            <span style="font-size:20px; cursor:pointer;" onclick="openNav()">&#9776;</span>
-                        </div>
-                    </th>
-                    <!-- Logo-->
-                    <th>
-                        <div>
-                            <img class="logo" alt="Logo" src="/fotos/logo2.png">
-                        </div>
-                    </th>
-                </tr>
-            </table>
-        </div>
-      </div>
-    </inhoud>
   </body>
 </html>
