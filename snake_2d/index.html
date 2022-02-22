@@ -129,7 +129,7 @@
 
         unityShowBanner('WebGL builds are not supported on mobile devices.');
       } 
-      else if (screen.width <= 1200)
+      else if (screen.innerWidth < 1200)
       {
         canvas.style.width = "800px";
         canvas.style.height = "500px";
