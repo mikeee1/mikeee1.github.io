@@ -140,9 +140,13 @@
         canvas.style.width = "960px";
         canvas.style.height = "600px";
       }
-      alert(screen.width)
-      alert(window.innerWidth)
-      alert(navigator.userAgent)
+      //alert(screen.width)
+      //alert(window.innerWidth)
+      //alert(navigator.userAgent)
+      if(/CrOS/i.test(navigator.userAgent))
+      {
+        alert("Chrome OS")
+      }
 
       loadingBar.style.display = "block";
 
