@@ -128,7 +128,13 @@
         canvas.style.height = window.innerHeight + 'px';
 
         unityShowBanner('WebGL builds are not supported on mobile devices.');
-      } else {
+      } 
+      else if (screen.width <= 1200)
+      {
+        canvas.style.width = "800px";
+        canvas.style.height = "500px";
+      }
+      else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
 
         canvas.style.width = "960px";
