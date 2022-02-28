@@ -21,7 +21,7 @@ h3.Text2-LTR-left {
   border-bottom: 3px dotted lightskyblue;
 }
 
-.greek{
+.foto{
   float: end;
   max-width: 100%;
   margin-bottom: 140px;
@@ -29,13 +29,13 @@ h3.Text2-LTR-left {
   border-radius: 25px;
 }
 
-.turkije {
+/*.turkije {
   float: end;
   max-width: 100%;
   margin-top: 20px;
   border: 3px solid red;
   border-radius: 25px;
-}
+}*/
 
 /* Media control menu (soms aangepast voor LTR: *zie over-rules* */
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */

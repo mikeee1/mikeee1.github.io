@@ -73,10 +73,16 @@
                 </h3>
             </td>
             <td>
-                <img class="greek" src="../fotos/griekenland.jpg">
-                <img class="turkije" src="../fotos/turkije.jpg">
+                <img class="foto" src="../fotos/griekenland.jpg">
+                <img class="foto" src="../fotos/turkije.jpg">
             </td>
         </tr>
     </table>
+    <script>
+        if(/iPhone|iPad|iPod|Android/i.test(navigator.userAgent))
+        {
+            document.getElementsByClassName("foto").style.display = "none"
+        }
+    </script>
 </body>
 </html>
