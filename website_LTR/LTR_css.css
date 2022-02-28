@@ -24,7 +24,7 @@ h3.Text2-LTR-left {
 h3.Text2-LTR-left-mobile {
   text-align: start;
   margin-left: 20px;
-  width: 1vw;
+  width: 100%;
   margin-right: 20px;
   border-left: 3px dotted lightskyblue;
   border-right: 3px dotted lightskyblue;
