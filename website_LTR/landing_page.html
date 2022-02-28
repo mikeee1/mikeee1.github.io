@@ -57,7 +57,7 @@
         </tr>
         <tr>
             <td>
-                <h3 class="Text2-LTR-left">
+                <h3 class="Text2-LTR-left" id="MainText">
                     Bij uw reis vind u een 'mongool' die u op wacht.<br>
                     De reis word vervolgd naar, mongolië.<br>
                     <br>
@@ -85,8 +85,11 @@
             //img.style.s
             //document.getElementsByClassName("foto").style
             document.getElementById("greece").style.display = "none"
+            document.getElementById("MainText").classList.replace("Text2-LTR-left","Text2-LTR-left-mobile");
             document.getElementById("turkije").style.display = "none"
+
         }
+        //alert(/Android/i.test(navigator.userAgent));
     </script>
 </body>
 </html>

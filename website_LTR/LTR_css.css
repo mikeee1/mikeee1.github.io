@@ -21,6 +21,16 @@ h3.Text2-LTR-left {
   border-bottom: 3px dotted lightskyblue;
 }
 
+h3.Text2-LTR-left-mobile {
+  text-align: start;
+  margin-left: 20px;
+  width: 1vw;
+  margin-right: 20px;
+  border-left: 3px dotted lightskyblue;
+  border-right: 3px dotted lightskyblue;
+  border-bottom: 3px dotted lightskyblue;
+}
+
 .foto{
   float: end;
   max-width: 100%;
