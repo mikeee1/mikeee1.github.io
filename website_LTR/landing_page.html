@@ -73,15 +73,19 @@
                 </h3>
             </td>
             <td>
-                <img class="foto" src="../fotos/griekenland.jpg">
-                <img class="foto" src="../fotos/turkije.jpg">
+                <img class="foto" id="greece" src="../fotos/griekenland.jpg">
+                <img class="foto" id="turkije" src="../fotos/turkije.jpg">
             </td>
         </tr>
     </table>
     <script>
         if(/iPhone|iPad|iPod|Android/i.test(navigator.userAgent))
         {
-            document.getElementsByClassName("foto").style.display = "none"
+            //var img = document.getElementsByClassName("foto");
+            //img.style.s
+            //document.getElementsByClassName("foto").style
+            document.getElementById("greece").style.display = "none"
+            document.getElementById("turkije").style.display = "none"
         }
     </script>
 </body>
