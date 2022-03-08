@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<meta name="description" content="Project WerkStuk Informatica Northgo College 2021-2022">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+<html lang="nl">
+    <head>
+        <title>HTML editor</title>
+        <link rel="stylesheet" href="main.css">
+        <!--<link rel="icon" type="image/x-icon" href="fotos/emblem_library.ico">
+        <script src="sidebar.js"></script>-->
+        <style>
+            textarea.Editor{
+                clear: both;
+                resize: none;
+                overflow-y: scroll;
+            }
+            button.Run{
+                clear: both;
+                position: fixed;
+                top: 2%;
+                left: 45%;
+                background-color: rgb(89, 223, 89);
+                width: 100px;
+                height: 50px;
+                font-size: 40px;
+            }
+            .Clear{
+                clear: both;
+                position: fixed;
+                top: 10%;
+                left: 45%;
+                background-color: rgb(99, 99, 99);
+                width: 100px;
+                height: 50px;
+                font-size: 36px;
+            }
+            #Run #Editor{
+                clear: both;
+            }
+            .OutputRun{
+                text-align: right;
+                position: fixed;
+                top: 2%;
+                right: 2%;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+        <textarea id="Editor" class ="Editor" name="Editor" rows="59" cols="60" onchange="Run()">
+<!DOCTYPE html>
+<html>
+    <body>
+        test
+    </body>
+</html></textarea>
+        </div>
+        <div class="OutputRun">
+            <button onclick="Run()" class="Run" id="Run">Run</button>
+            <button onclick="Clear()" class="Clear">Clear</button>
+            <iframe id="Output" class="Output" width="500" height="860"></iframe>
+        </div>
+        <script>
+            var iframe = document.getElementById("Output");
+            var editor = document.getElementById("Editor");
+            function Run() {
+                
+                //alert(editor);
+                iframe.srcdoc = editor.value;
+                //Run();
+            }
+            function Clear(){
+                editor.value = "<!DOCTYPE html>"+"\n<html>"+"\n    <body>"+"\n        "+"\n    </body>"+"\n</html>"
+            }
+            document.getElementById('Editor').addEventListener('keydown', function(e) {
+                if (e.key == 'Tab') {
+                    e.preventDefault();
+                    var start = this.selectionStart;
+                    var end = this.selectionEnd;
+
+                    // set textarea value to: text before caret + tab + text after caret
+                    this.value = this.value.substring(0, start) +
+                    "\t" + this.value.substring(end);
+
+                    // put caret at right position again
+                    this.selectionStart =
+                    this.selectionEnd = start + 1;
+                }
+            });
+        </script>
+    </body>
+</html>
