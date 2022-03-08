@@ -34,6 +34,26 @@
                 height: 50px;
                 font-size: 36px;
             }
+            .Button{
+                clear: both;
+                position: fixed;
+                top: 26%;
+                left: 45%;
+                background-color: rgb(145, 145, 145);
+                width: 100px;
+                height: 50px;
+                font-size: 20px;
+            }
+            .HtmlEditor{
+                clear: both;
+                position: fixed;
+                top: 33%;
+                left: 45%;
+                background-color: rgb(145, 145, 145);
+                width: 100px;
+                height: 50px;
+                font-size: 20px;
+            }
             #Run #Editor{
                 clear: both;
             }
@@ -51,13 +71,15 @@
 <!DOCTYPE html>
 <html>
     <body>
-        test
+        
     </body>
 </html></textarea>
         </div>
         <div class="OutputRun">
             <button onclick="Run()" class="Run" id="Run">Run</button>
             <button onclick="Clear()" class="Clear">Clear</button>
+            <button onclick="Button()" class="Button">Add button</button>
+            <button onclick="HtmlEditor()" class="HtmlEditor">HTML editor</button>
             <iframe id="Output" class="Output" width="500" height="860"></iframe>
         </div>
         <script>
@@ -71,6 +93,7 @@
             }
             function Clear(){
                 editor.value = "<!DOCTYPE html>"+"\n<html>"+"\n    <body>"+"\n        "+"\n    </body>"+"\n</html>"
+                iframe.srcdoc = editor.value;
             }
             document.getElementById('Editor').addEventListener('keydown', function(e) {
                 if (e.key == 'Tab') {
@@ -88,5 +111,6 @@
                 }
             });
         </script>
+        <script src="/javascript.js"></script>
     </body>
 </html>
