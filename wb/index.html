@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+<html lang="nl">
+    <head>
+        <title>wiskunde B</title>
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <!--<link rel="stylesheet" href="css.css">
+        <link rel="icon" type="image/x-icon" href="fotos/emblem_library.ico">
+        <script src="sidebar.js"></script>-->
+        <style>
+            ul,ol { margin-top: 0; margin-bottom: 0;}
+            .tab
+            {
+                margin-left: 22px;
+            }
+            .stappenplan
+            {
+                margin-left: 0px;/*was 11*/
+                color: rgb(255, 124, 124);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="alles" style="margin-left: 2px;">
+            Inhoud:<br>
+            <a href="#simple_functies">Simple functies</a><br>
+            <a href="#functie vaardigheden">Functie vaardigheden</a>
+            <ul>
+                <li>
+                    <a href="#">Snijpunten</a>
+                </li>
+                <li>
+                    <a href="#">Asymptoten</a>
+                </li>
+                <li>
+                    <a href="#">Formule opstellen</a>
+                </li>
+            </ul>
+            <a href="#">Exponent/log</a>
+            <ul>
+                <li>
+                    <a href="#">log functies</a>
+                </li>
+                <li>
+                    <a href="#">groei functies</a>
+                </li>
+            </ul>
+            <a href="#">Goniometrie</a><br>
+            <a href="#">Differentiëren</a><br>
+            <a href="#">Meetkunde met coördinaten</a><br>
+            <a href="#">Meetkunde zonder coördinaten</a><br><br><br><br>
+            <div id="simple_functies">
+                Simple functies (\(x^{iets}\))
+                <div class="tab">
+                    <a href="#liniare"> A: liniare (\(x^1\))</a><br>
+                    <a href="#kwadratisch vergelijkingen"> B: kwadratisch vergelijkingen(\(a\cdot x^2+b\cdot x+c\))</a><br>
+                    <a href="#hogere machten"> C: hogere machten (\(x^3,x^4,x^{99},etc\))</a><br>
+                    <a href="#wortels"> D: wortels (\(\sqrt x=x^\frac{1}{2}\))</a><br>
+                    <a href="#breuken"> E: breuken (\(\frac{1}{x}=x^{-1}\))</a><br><br>
+                    <div class="tab" id="liniare">
+                        A liniare (\(x^1\))
+                        <div class="tab">
+                            <div class="stappenplan">
+                                Stappenplan:<br>
+                                <ol>
+                                    <li>Haal alle Xen naar één kant</li>
+                                    <li>Haal alle getalen naar de andere kant</li>
+                                    <li>deel door het getal voor X</li>
+                                </ol>
+                            </div>
+                            <br>
+                            VB: los <u>exact</u> op (\(\frac{1}{2}(12X+12)=4X+2\))<br>
+                            \(6X+6=4X+2\)<br>
+                            \(2X+1=2\)<br>
+                            \(2X=1\)<br>
+                            \(X=\frac{1}{2}\)<br>
+                            <u>NIET X=0.5 (exact)</u><br><br>
+                        </div>
+                    </div>
+                    <div class="tab" id="kwadratisch vergelijkingen">
+                        B kwadratisch vergelijkingen (\(a\cdot x^2+b\cdot x+c\))
+                        <div class="tab">
+                            <div class="stappenplan">
+                                Stappenplan abc-formule:<br>
+                                <ol>
+                                    <li>schrijf om tot \(a x^2+b x+c\)</li>
+                                    <li>\(D=(b)^2-4ac\)</li>
+                                    <li>\(x=\frac{-b\pm\sqrt{D}}{2a}\)</li>
+                                </ol>
+                            </div>
+                            \(D\gt 2\) twee oplossingen<br>
+                            \(D= 0\) één oplossing<br>
+                            \(D\lt 2\) geen oplossing <br><br>
+                        </div>
+                    </div>
+                    <div class="tab" id="hogere machten">
+                        C hogere machten (\(x^3,x^4,x^{99},etc\)) <br>
+                        <div class="tab">
+                            1. basis regel \(x^{iets}=getal\)
+                            <div class="tab">
+                                <ul>
+                                    <li>
+                                        oneven macht (\(x^3,x^5,etc\))
+                                        <div class="tab">
+                                            →altijd 1 oplossing
+                                        </div>
+                                    </li>
+                                    <li>
+                                        even macht (\(x^2,x^4,etc\))
+                                        <div class="tab">
+                                            → positive macht: 2 oplossingen <br>
+                                            → negative macht: 0 oplossingen(kan niet)
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            2. trucs (meerdere \(x^{iets}\) in vergelijking)
+                            <div class="tab">
+                                <div class="stappenplan">
+                                    Stappenplan trucs:<br>
+                                    <ol>
+                                        <li>schrijf om tot \(\ldots =0\)</li>
+                                        <li>
+                                            truc #1 \(a\cdot b=0\)
+                                            <div class="tab">
+                                                → \(a=0 \space \lor \space b=0\)
+                                            </div>
+                                            truc #2 haal \(x\) buiten haakjes en los op
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <br><br>
+                    <div class="tab" id="wortels">
+                        D wortels (\(\sqrt x=x^\frac{1}{2}\)) <br>
+                        <div class="tab">
+                            <div class="stappenplan">
+                                Stappenplan wortels:<br>
+                                <ol>
+                                    <li>isoleren</li>
+                                    <li>kwadrateren</li>
+                                    <li>controleren</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div> <br><br>
+                    <div class="tab" id="breuken">
+                        E breuken (\(\frac{1}{x}=x^{-1}\))<br>
+                        <div class="tab">
+                            <div class="stappenplan">
+                                Stappenplan breuken:<br>
+                                <ol>
+                                    <li>zorg voor breuk is gelijk aan breuk</li>
+                                    <li>kruislings vermenigvuldigen</li>
+                                    <li>controleren op delen door \(0\)</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><br><br><br>
+            <div id="functie vaardigheden">
+                Functie vaardigheden
+                <div class="tab">
+                    <a href="#snijpunten">A: snijpunten</a><br>
+                    <a href="#asymptoten">B: asymptoten</a><br>
+                    <a href="#">C: formule opstellen</a><br><br>
+                    <div class="tab" id="snijpunten">
+                        A snijpunten (gelijk, evenveel, groot/lang, snijden, snijpunten of gemeenschappelijk punt) <br>
+                        <div class="tab">
+                            Opties:
+                            <div class="tab">
+                                1. snijpunt van f(x) met de x-as, \(f(x)=0\) <br>
+                                2. snijpunt van f(x) met de y-as, \(f(0)\) <br>
+                                3. snijpunt van f(x) met g(x), \(f(x)=g(x)\)
+                            </div>
+                        </div>
+                    </div> <br>
+                    <div class="tab" id="asymptoten">
+                        B asymptoten (horizontale/verticale asymptoten of grenswaarde)
+                        <div class="tab">
+                            Verticale:
+                            <ul>
+                                <li>
+                                    Breuken <br>
+                                    → Los op: noemer = 0, \(\left( \frac{1}{0} \right)\)
+                                </li>
+                                <li>
+                                    Logaritme <br>
+                                    → Los op: binnenkant van log \(=0\)
+                                </li>
+                            </ul> <br>
+                            Horizontale:
+                            <ul>
+                                <li>
+                                    Vul een groot getal in voor \(x\)
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    </body>
+</html>
