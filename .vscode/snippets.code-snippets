@@ -57,16 +57,16 @@
 		"description": "adds <br>"
 	},
 
-	"Ordered Lists": {
+	"Ordered List": {
 		"prefix": "ol",
 		"body": ["<ol>","\t<li>","\t\t$0","\t</li>","</ol>"],
-		"description": "Ordered Lists"
+		"description": "Ordered List"
 	},
 
-	"Unordered Lists": {
+	"Unordered List": {
 		"prefix": "ul",
 		"body": ["<ul>","\t<li>","\t\t$0","\t</li>","</ul>"],
-		"description": "Unordered Lists"
+		"description": "Unordered List"
 	},
 
 	"Lists item": {
@@ -77,7 +77,7 @@
 	
 	"page link": {
 		"prefix": "page link",
-		"body": ["<a href=\"#\">$1</a><br>$0"],
+		"body": ["<a href=\"#$2\">$1</a><br>$0"],
 		"description": "adds <a href=\"#\"></a>"
 	},
 	
