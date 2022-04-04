@@ -27,6 +27,18 @@
 		"description": "tab div"
 	},
 
+	"Comment opening": {
+		"prefix": "Comment opening",
+		"body": ["<!--"],
+		"description": "opening comment"
+	},
+
+	"Comment closing": {
+		"prefix": "Comment closing",
+		"body": ["-->"],
+		"description": "closing comment"
+	},
+
 	"tab div + id": {
 		"prefix": "id tab",
 		"body": ["<div class=\"tab\" id=\"$1\">","\t$0","</div>"],
