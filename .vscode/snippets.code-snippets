@@ -44,6 +44,24 @@
 		"body": ["<br>"],
 		"description": "adds <br>"
 	},
+
+	"Ordered Lists": {
+		"prefix": "ol",
+		"body": ["<ol>","\t<li>","\t\t$0","\t</li>","</ol>"],
+		"description": "Ordered Lists"
+	},
+
+	"Unordered Lists": {
+		"prefix": "ul",
+		"body": ["<ul>","\t<li>","\t\t$0","\t</li>","</ul>"],
+		"description": "Unordered Lists"
+	},
+
+	"Lists item": {
+		"prefix": "li",
+		"body": ["<li>","\t$0","</li>"],
+		"description": "List item"
+	},
 	
 	"page link": {
 		"prefix": "page link",
