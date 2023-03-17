@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>3.2</title>
+</head>
+<body onload="load()">
+	<input type="checkbox" class="checkbox" id="vlees" name="vlees" value="vlees" checked onchange="filter()">
+	<label for="vlees">Vlees</label>
+	<input type="checkbox" class="checkbox" id="groente" name="groente" value="groente" checked onchange="filter()">
+	<label for="groente">Groente</label>
+	<input type="checkbox" class="checkbox" id="rest" name="rest" value="rest" checked onchange="filter()">
+	<label for="rest">Rest</label>
+	<input type="checkbox" class="checkbox" id="favorites" name="favorites" value="favorites" checked onchange="filter()">
+	<label for="rest">Favorites</label>
+	<section class="wrapper">
+		<article class="card vlees">
+			
+			<img src="hamburger.jpg" alt="hamburger">
+			<h3>Hamburger</h3>
+		</article>
+		<article class="card vlees">
+			<img src="hamburger2.jpg" alt="hamburger extra sla">
+			<h3>Hamburger extra sla</h3>
+		</article>
+		<article class="card rest">
+			<img src="pizza.jpg" alt="pizza">
+			<h3>Pizza</h3>
+		</article>
+		<article class="card groente">
+			<img src="pasta.jpg" alt="pasta">
+			<h3>Pasta</h3>
+		</article>
+		<article class="card groente">
+			<img src="salade.jpg" alt="salade">
+			<h3>Salade</h3>
+		</article>
+		<article class="card groente">
+			<img src="sandwich.jpg" alt="sandwich">
+			<h3>Sandwich</h3>
+		</article>
+		<article class="card rest">
+			<img src="wrapes.jpg" alt="wrapes">
+			<h3>Wrapes</h3>
+		</article>
+		<article class="card vlees">
+			<img src="vlees.jpg" alt="vlees">
+			<h3>Vlees</h3>
+		</article>
+		<article class="card rest">
+			<img src="cupcake.jpg" alt="cupcake">
+			<h3>Cupcake</h3>
+		</article>
+	</section>
+	<script>
+		function load() {
+			var cards = document.getElementsByClassName("card");
+			for (let i = 0; i < cards.length; i++) {
+				const e = cards[i];
+				e.prepend(createElementFromHTML("<svg class='heart' onclick='onHeartClick(this)' version='1.0' xmlns='http://www.w3.org/2000/svg' width='40pt' height='40pt' viewBox='0 0 2258.000000 2048.000000' preserveAspectRatio='xMidYMid meet'> <g class='heart-path' transform='translate(0.000000,2048.000000) scale(0.100000,-0.100000)' stroke='none'> <path d='M5623 20200 c-695 -30 -1104 -106 -1576 -292 -197 -78 -754 -350 -967 -472 -1059 -608 -1906 -1543 -2491 -2751 -315 -650 -429 -1088 -479 -1845 -6 -85 -13 -364 -17 -620 -8 -629 12 -1057 72 -1546 179 -1455 688 -2718 1571 -3894 463 -617 930 -1115 1704 -1821 969 -884 1461 -1279 3765 -3023 385 -291 752 -570 815 -620 899 -704 1874 -1565 2328 -2056 304 -329 545 -653 746 -1006 89 -157 115 -190 140 -181 8 3 38 49 67 103 29 53 79 131 112 172 306 385 1259 1314 2272 2213 851 756 1813 1541 2549 2079 1411 1033 2219 1678 3031 2420 245 224 779 758 969 970 624 694 1078 1342 1441 2055 175 344 348 753 451 1063 536 1617 472 4263 -138 5656 -171 392 -499 907 -838 1316 -135 163 -539 567 -705 704 -391 325 -758 562 -1219 786 -662 323 -1337 507 -2126 582 -209 20 -814 16 -1030 -5 -577 -59 -1086 -179 -1578 -373 -708 -280 -1295 -664 -1822 -1193 -260 -261 -455 -499 -657 -801 -202 -304 -307 -503 -573 -1085 -173 -379 -210 -455 -210 -432 0 28 -166 643 -196 727 -50 139 -182 403 -286 570 -225 365 -503 705 -869 1065 -322 316 -616 554 -944 762 -208 133 -718 404 -943 502 -335 147 -699 227 -1187 261 -202 14 -944 20 -1182 10z'/> </g> </svg>"))	
+			}
+			filter();
+		}
+
+		function createElementFromHTML(htmlString) {
+			var div = document.createElement('div');
+			div.innerHTML = htmlString.trim();
+			return div.firstChild;
+		}
+
+		function filter() {
+			var vlees = document.getElementById("vlees").checked;
+			var groente = document.getElementById("groente").checked;
+			var rest = document.getElementById("rest").checked;
+			var favorites = document.getElementById("favorites").checked;
+			var cards = document.getElementsByClassName("card");
+			for (var i = 0; i < cards.length; i++) {
+				var card = cards[i];
+				if (card.classList.contains("vlees") && vlees) {
+					card.style.display = "block";
+				} else if (card.classList.contains("groente") && groente) {
+					card.style.display = "block";
+				} else if (card.classList.contains("rest") && rest) {
+					card.style.display = "block";
+				} else if (card.classList.contains("favorites") && favorites) {
+					card.style.display = "block";
+				} else {
+					card.style.display = "none";
+				}
+			}
+			if (!vlees && !groente && !rest && !favorites) {
+				for (var i = 0; i < cards.length; i++) {
+					var card = cards[i];
+					card.style.display = "block";
+				}
+			}
+		}
+		function onHeartClick(heart) {
+			var card = heart.parentElement;
+			if (heart.classList.contains("heart-active")) {
+				heart.classList.remove("heart-active");
+			} else {
+				heart.classList.add("heart-active");
+			}
+			if (card.classList.contains("favorites")) {
+				card.classList.remove("favorites");
+			} else {
+				card.classList.add("favorites");
+			}
+			filter();
+		}
+	</script>
+</body>
+</html>
